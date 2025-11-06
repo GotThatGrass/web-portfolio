@@ -1,0 +1,19 @@
+.image-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+}
+
+.image-button img {
+  display: block;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+#bob-the-fish {
+  display: inline-block;
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WTI | File Transfer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">    
+    </head>
+    <body class="file_transfer">
+        <nav id="sideNav" class="sidenav">
+             <a href="world_wide_web.html">The World Wide Web</a>
+            <a href="instant_messaging.html">Instant Messaging</a>
+            <a href="file_transfer.html" class="active">File Transfer</a>
+            <a href="email.html">Email</a>
+            <div class="bottom">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="http://chihuahuaspin.com" id="secret" target="_blank">Secret Website >:D</a>                
+            </div>
+        </nav>
+        <main>
+            <section class="header">
+                <h1>Welcome to the Internet: <br> <span><i>File Transfer</i></span></h1>
+            </section>
+            <section>
+                <h2>What is file transfer?</h2>
+                <p><b>File transfer</b> is the process of moving or copying files over the internet, usually between two computers. It usually works by transferring files between a client and a server.</p>
+            </section>
+            <section>
+                <h2>How does file transfer work?</h2>
+                The three main protocols used for file transfer are <b>FTP</b> (File Transfer Protocol), <b>SFTP</b> (Secure File Transfer Protocol), and <b>FTPS</b> (File Transfer Protocol Secure).
+                <br><br>
+                <b>FTP</b> is one of the oldest internet protocols. It is a simple system that transfers files at fast speeds and can be used for both plain text and binary files. It has two separate channels for control and data transfer. It uses usernames and passwords for authentication.
+                <br><br>
+                <b>FTPS</b> is very similar to FTP and functions the same way, but it uses SSL/TLS (Secure Sockets Layer/Transport Layer Security) for an added layer of security. It can be used to send sensitive information that might be at risk with FTP. Usernames and passwords are also encrypted.
+                <br><br>
+                <b>SFTP</b> is different from the other two. It is packet-based, not text-based. Unlike the other two, it uses a single connection instead of two channels and ports. It is also encrypted, but using SSH (Secure Shell).
+                <br><br>
+                <img src="images/ftp.png">
+                <p>An image of how FTP works.</p>
+            </section>
+            <section>
+                <h2>Bibliography</h2>
+                <a href="https://www.ibm.com/think/topics/file-transfer" target="_blank">What is a file transfer?</a>
+		        <a href="https://www.exavault.com/blog/difference-between-ftp-ftps-and-sftp" target="_blank">The Difference Between FTP, FTPS, and SFTP</a>
+		        <a href="https://pacgenesis.com/data-transfer-protocols-demystified-ftp-sftp-and-http/" target="_blank">Data Transfer Protocols Demystified: FTP, SFTP, and HTTP</a>
+		        <a href="https://www.jscape.com/blog/understanding-key-differences-between-ftp-ftps-and-sftp" target="_blank">Understanding key differences between FTP, FTPS, and SFTP</a>
+                <a href="https://www.ebsco.com/research-starters/computer-science/file-transfer-protocol" target="_blank">File Transfer Protocol</a>
+            </section>
+        </main>
+        <script src="js/script.js" defer></script>
+    </body>
+</html>

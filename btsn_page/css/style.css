@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+/* ========== Global Styles ========== */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Schoolbell", cursive;
+
+    background: #ffecd2;
+}
+
+/* ========== Header ========== */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("../images/ferret.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 100vh;
+    color: white;
+
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.2)
+    );
+    z-index: 0;
+}
+
+header * {
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+header h2 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    color: #f0f0f0;
+}
+
+/* ========== Main ========== */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* ========== Iframe ========== */
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    overflow: hidden;
+}
+
+/* ========== Buttons ========== */
+button {
+    background: linear-gradient(45deg, #ff6b6b, #f7b733, #4CAF50, #1dd1a1, #5f27cd);
+    background-size: 400% 400%;
+    animation: gradientMove 8s infinite ease-in-out;
+
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    padding: 16px 36px;
+    margin: 10px 2px;
+
+    border: none;
+    border-radius: 12px;
+
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4CAF50;
+}
+
+button span {
+    vertical-align: middle;
+}
+
+button:hover img {
+    filter: brightness(0.8);
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-family: "Schoolbell", cursive;
+}
+
+@keyframes gradientMove {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ========== Ordered List ========== */
+ol li {
+    margin: 10px 0;
+    font-size: 1.3rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+ol li:hover {
+    transform: scale(1.1) rotate(-2deg);
+    color: hotpink;
+    text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.5);
+    cursor: pointer;
+}
+
+ol li span {
+    font-weight: bold;
+    display: inline-block;
+    animation: rainbow 4s infinite linear;
+}
+
+ol li span:hover {
+    text-decoration: underline wavy yellow;
+}
+
+@keyframes rainbow {
+    0%   { color: red; }
+    25%  { color: orange; }
+    50%  { color: limegreen; }
+    75%  { color: blue; }
+    100% { color: purple; }
+}
+
+
+.chihuahua p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.chihuahua {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+div {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 200px;
+    padding: 10px;
+    width: 100%;
+}

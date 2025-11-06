@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #CAD2C5;
+    margin: 0;
+    display: flex;
+}
+
+h1, h2 {
+    color: #52796F;
+}
+
+nav {
+    background-color: #2f3e46;
+    color: #cad2c5;
+}
+
+.sidenav {
+    width: 200px;
+    background-color: #2f3e46;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidenav .links {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav a {
+    display: block;
+    color: #cad2c5;
+    padding: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.sidenav a.active {
+    background-color: #52796F;
+    color: white;
+}
+
+.sidenav a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.bottom {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin-left: 200px;         
+    padding: 16px;
+    min-height: 100vh;
+    background: #CAD2C5;
+    overflow-y: auto;           
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  main {
+    margin-left: 0;
+  }
+  .sidenav a {
+    float: left;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidenav a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.header h1 span {
+    color: #2f3e46;
+}
+
+.credits {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: #555;
+  font-style: italic;
+}
+
+#secret {
+  display: none;
+}
